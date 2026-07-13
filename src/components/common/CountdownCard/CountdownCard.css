@@ -1,6 +1,6 @@
 .countdown {
-  background: white;
-  border-radius: 18px;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
   padding: 32px;
   text-align: center;
   box-shadow: 0 10px 30px rgba(0,0,0,.08);

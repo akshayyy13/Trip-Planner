@@ -1,7 +1,5 @@
 .home {
-    max-width: 1280px;
-    margin: auto;
-    padding: 40px 24px 80px;
+    padding-block: 40px 80px;
 }
 
 .hero {

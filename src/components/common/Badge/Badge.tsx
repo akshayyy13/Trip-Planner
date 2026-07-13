@@ -1,11 +1,23 @@
-import React from 'react'
+import type { ReactNode } from "react";
 
-const Badge = () => {
-  return (
-    <div>
-      
-    </div>
-  )
+import styles from "./Badge.module.css";
+
+export type BadgeVariant =
+  | "primary"
+  | "success"
+  | "warning"
+  | "danger"
+  | "info";
+
+interface BadgeProps {
+  children: ReactNode;
+  variant?: BadgeVariant;
 }
 
-export default Badge
+function Badge({ children, variant = "primary" }: BadgeProps) {
+  return (
+    <span className={`${styles.badge} ${styles[variant]}`}>{children}</span>
+  );
+}
+
+export default Badge;

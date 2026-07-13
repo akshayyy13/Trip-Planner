@@ -1,0 +1,9 @@
+.page {
+    padding-block: var(--space-9);
+}
+
+.days {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+}

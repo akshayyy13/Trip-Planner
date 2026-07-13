@@ -1,30 +1,33 @@
-import Hero from "../../components/home/Hero/Hero";
+import Hero from "../../features/home/Hero/Hero";
 import CountdownCard from "../../components/common/CountdownCard/CountdownCard";
-import QuickStats from "../../components/home/QuickStats/QuickStats";
-import TravellerGrid from "../../components/home/TravellerGrid/TravellerGrid";
-import TripTimeline from "../../components/home/TripTimeline/TripTimeline";
+import QuickStats from "../../features/home/QuickStats/QuickStats";
+import TravellerGrid from "../../features/home/TravellerGrid/TravellerGrid";
+import TripTimeline from "../../features/home/TripTimeline/TripTimeline";
+import { Link } from "react-router-dom";
 
 import "./Home.css";
-import BookingChecklist from "../../components/home/BookingChecklist/BookingChecklist";
-import TransportSummary from "../../components/home/TransportSummary/TransportSummary";
+import BookingChecklist from "../../features/home/BookingChecklist/BookingChecklist";
+import TransportSummary from "../../features/home/TransportSummary/TransportSummary";
 
 function Home() {
   return (
-    <div className="home">
-      <Hero />
+    <main className="home">
+      <div className="container">
+        <Hero />
 
-      <CountdownCard />
+        <CountdownCard />
 
-      <QuickStats />
+        <QuickStats />
 
-      <TravellerGrid />
+        <TravellerGrid />
 
-      <TripTimeline />
+        <TripTimeline />
 
-      <BookingChecklist />
+        <BookingChecklist />
 
-      <TransportSummary />
-    </div>
+        <TransportSummary />
+      </div>
+    </main>
   );
 }
 

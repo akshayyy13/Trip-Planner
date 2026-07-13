@@ -1,0 +1,107 @@
+.header{
+    width:100%;
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    text-align:left;
+}
+
+.header h2{
+
+    margin:16px 0 10px;
+
+    font-size:1.6rem;
+
+}
+
+.meta{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+    color:#64748b;
+
+    font-size:.95rem;
+
+}
+
+.meta span{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+}
+
+.body{
+
+    margin-top:28px;
+
+    overflow:hidden;
+
+}
+
+.route{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    background:#ecfdf5;
+
+    color:#166534;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    margin-bottom:28px;
+
+    font-weight:600;
+
+}
+
+.activities{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+@media(max-width:768px){
+
+.header{
+
+flex-direction:column;
+
+gap:16px;
+
+}
+
+.meta{
+
+flex-direction:column;
+
+gap:10px;
+
+}
+
+}

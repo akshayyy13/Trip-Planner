@@ -1,22 +1,63 @@
 import { NavLink } from "react-router-dom";
 
-import "./Navbar.css";
+import styles from "./Navbar.module.css";
 
 function Navbar() {
   return (
-    <header className="navbar">
-      <div className="navbar__container">
-        <NavLink to="/" className="navbar__logo">
-          🌴 Kerala Trip 2026
-        </NavLink>
+    <header className={styles.navbar}>
+      <div className="container">
+        <div className={styles.content}>
+          <NavLink to="/" className={styles.logo}>
+            🌴 Kerala Trip 2026
+          </NavLink>
 
-        <nav className="navbar__nav">
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/itinerary">Itinerary</NavLink>
-          <NavLink to="/transport">Transport</NavLink>
-          <NavLink to="/hotels">Hotels</NavLink>
-          <NavLink to="/budget">Budget</NavLink>
-        </nav>
+          <nav className={styles.navigation}>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? styles.active : styles.link
+              }
+            >
+              Home
+            </NavLink>
+
+            <NavLink
+              to="/itinerary"
+              className={({ isActive }) =>
+                isActive ? styles.active : styles.link
+              }
+            >
+              Itinerary
+            </NavLink>
+
+            <NavLink
+              to="/transport"
+              className={({ isActive }) =>
+                isActive ? styles.active : styles.link
+              }
+            >
+              Transport
+            </NavLink>
+
+            <NavLink
+              to="/hotels"
+              className={({ isActive }) =>
+                isActive ? styles.active : styles.link
+              }
+            >
+              Hotels
+            </NavLink>
+
+            <NavLink
+              to="/budget"
+              className={({ isActive }) =>
+                isActive ? styles.active : styles.link
+              }
+            >
+              Budget
+            </NavLink>
+          </nav>
+        </div>
       </div>
     </header>
   );

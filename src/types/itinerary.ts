@@ -9,6 +9,8 @@ export type TransportMode =
   | "Jeep"
   | "Auto";
 
+export type ActivityPriority = "Must" | "Recommended" | "Optional";
+
 export interface Activity {
   time: string;
 
@@ -32,7 +34,17 @@ export interface Activity {
 
   mapsLink?: string;
 
-  priority?: "Must" | "Recommended" | "Optional";
+  priority?: ActivityPriority;
+
+  travelTime?: string;
+
+  notes?: string;
+
+  image?: string;
+
+  sunrise?: boolean;
+
+  sunset?: boolean;
 }
 
 export interface TripDay {

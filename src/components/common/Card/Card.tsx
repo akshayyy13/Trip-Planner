@@ -1,29 +1,31 @@
-import type { HTMLAttributes, ReactNode } from "react";
-
+import type { ReactNode } from "react";
+import clsx from "clsx";
 import styles from "./Card.module.css";
 
-interface CardProps extends HTMLAttributes<HTMLDivElement> {
+interface CardProps {
   children: ReactNode;
+
+  className?: string;
+
+  padding?: "none" | "sm" | "md" | "lg";
+
   hover?: boolean;
-  padding?: "sm" | "md" | "lg";
 }
 
 function Card({
   children,
-  hover = true,
-  padding = "md",
   className = "",
-  ...props
+  padding = "md",
+  hover = false,
 }: CardProps) {
   return (
     <div
-      className={[
+      className={clsx(
         styles.card,
-        hover ? styles.hover : "",
         styles[padding],
+        hover && styles.hover,
         className,
-      ].join(" ")}
-      {...props}
+      )}
     >
       {children}
     </div>

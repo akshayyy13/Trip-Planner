@@ -1,0 +1,76 @@
+:root {
+  /* ===== Brand ===== */
+
+  --primary: #16a34a;
+  --primary-dark: #15803d;
+  --primary-light: #22c55e;
+  --primary-soft: #dcfce7;
+
+  /* ===== Status ===== */
+
+  --success: #16a34a;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --info: #2563eb;
+
+  /* ===== Background ===== */
+
+  --background: #f8fafc;
+  --surface: #ffffff;
+  --surface-alt: #f1f5f9;
+
+  /* ===== Text ===== */
+
+  --text: #0f172a;
+  --text-light: #334155;
+  --text-muted: #64748b;
+
+  /* ===== Borders ===== */
+
+  --border: #e2e8f0;
+  --border-light: #f1f5f9;
+
+  /* ===== Shadows ===== */
+
+  --shadow-sm: 0 2px 6px rgba(15, 23, 42, 0.05);
+
+  --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.08);
+
+  --shadow-lg: 0 18px 50px rgba(15, 23, 42, 0.12);
+
+  /* ===== Radius ===== */
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+
+  /* ===== Layout ===== */
+
+  --container-width: 1320px;
+  --container-padding: 48px;
+
+  /* ===== Navbar ===== */
+
+  --header-height: 76px;
+
+  /* ===== Spacing ===== */
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 40px;
+  --space-9: 56px;
+  --space-10: 72px;
+
+  /* ===== Animation ===== */
+
+  --transition-fast: 0.18s ease;
+  --transition: 0.28s ease;
+  --transition-slow: 0.45s ease;
+}
