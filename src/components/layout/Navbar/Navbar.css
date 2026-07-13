@@ -1,0 +1,43 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.navbar__container {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 24px;
+}
+
+.navbar__logo {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.navbar__nav {
+  display: flex;
+  gap: 24px;
+}
+
+.navbar__nav a {
+  color: #4b5563;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar__nav a.active {
+  color: #16a34a;
+}

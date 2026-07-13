@@ -1,0 +1,22 @@
+.countdown {
+  background: white;
+  border-radius: 18px;
+  padding: 32px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.countdown h2 {
+  font-size: 3rem;
+  color: #15803d;
+}
+
+.countdown p {
+  margin-top: 12px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.countdown span {
+  color: #6b7280;
+}
